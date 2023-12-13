@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <div class="content">
+        <div class="container">
+          <h1 class="title">Визуализация<br />почти готова!</h1>
+          <p class="subtitle">
+            Прикрепи фото стены (комнаты, где будут фотообои), напиши номер<br />
+            телефона и жми «Получить визуализацию», мы примерим получившуюся<br />
+            подборку на твою стену и отправим результат на WhatsApp или Viber.
+          </p>
+          <form action="submit-handler.php" enctype="multipart/form-data" method="post" class="submit-form">
+            <input type="text" name="name" class="custom-input" placeholder="Имя">
+            <input type="email" name="email" class="custom-input" placeholder="email">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <label for="fileToUpload" class="custom-file-upload">Прикрепить файл</label>  
+            <button type="submit" class="my_button">Получить визуализацию</button>      
+          </form>
+    
+        </div>
+      </div>
+      <script src="form_script.js"></script>
+  </body>
+</html>
